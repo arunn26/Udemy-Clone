@@ -92,6 +92,14 @@ body{
     margin-top: 6px;
     display: flex;
     justify-content: space-evenly;
+    border:solid #A435F0 1px;
+}
+
+.categories p:hover{
+    transition:0.1s;
+    background-color: transparent;
+    color:black;
+    
 }
 
 .image-section{
@@ -115,6 +123,25 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes zoom {
+    0%{
+        tranform:scale(0);
+        opacity:0
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    
 }
 
 
